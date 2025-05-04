@@ -108,3 +108,52 @@ footer {
     padding: 1rem;
   }
 }
+
+/* Адаптивность для экранов меньше 768px (планшеты и телефоны) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav a {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+}
+
+/* Адаптивность для экранов меньше 480px (маленькие телефоны) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}

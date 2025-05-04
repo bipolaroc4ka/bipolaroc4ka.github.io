@@ -93,77 +93,25 @@ footer {
   margin-top: 2rem;
 }
 
-/* Адаптивность для телефонов */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-
-  main {
-    margin: 1rem;
-    padding: 1rem;
-  }
-}
-.image-container img {
-  max-width: 100%; /* Картинка будет растягиваться на всю ширину блока */
-  height: auto; /* Высота будет пропорциональна ширине */
-  border-radius: 8px; /* Добавит скругление углов */
-}
-
-/* Адаптивность для экранов меньше 768px (планшеты и телефоны) */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  nav a {
-    padding: 12px;
-    border-bottom: 1px solid #ccc;
-  }
-
-  main {
+/* Адаптация под айфоны и телефоны (ширина меньше 430px) */
+@media (max-width: 430px) {
+  body {
+    font-size: 16px;
     padding: 10px;
   }
 
-  .card {
-    padding: 10px;
-    margin-bottom: 15px;
+  header, nav, footer {
+    flex-direction: column; /* если у тебя меню в строку — сделаем столбиком */
+    align-items: center;
   }
 
-  header h1 {
-    font-size: 1.8rem;
-  }
-
-  nav a {
-    font-size: 1.1rem;
-  }
-}
-
-/* Адаптивность для экранов меньше 480px (маленькие телефоны) */
-@media (max-width: 390px) {
-  nav {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  header h1 {
-    font-size: 1.5rem;
+  img {
+    width: 100%;
+    height: auto;
   }
 
   nav a {
-    font-size: 1rem;
-  }
-
-  .card h3 {
-    font-size: 1.2rem;
-  }
-
-  .card p {
-    font-size: 1rem;
+    display: block;
+    margin: 5px 0;
   }
 }

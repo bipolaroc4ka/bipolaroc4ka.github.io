@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Обо мне</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>Обо мне</h1></header>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="about.html">Обо мне</a>
+    <a href="projects.html">Проекты</a>
+    <a href="contacts.html">Контакты</a>
+  </nav>
+  <main>
+    <h2>Обо мне</h2>
+    <p>Я bipolaroc4ka. Занимаюсь веб-разработкой, ботами и парсингом данных.</p>
+  </main>
+  <footer>© 2025 bipolaroc4ka</footer>
+</body>
+</html>
